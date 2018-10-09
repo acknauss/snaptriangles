@@ -143,31 +143,38 @@ function updateMina4() {
 
 
 function run() {
-  timeline1_anim();
+  var time1 = parseInt($('#time-1').val());
+  setTimeout(function(){
+    timeline1_anim();
+     }, time1);  
 }
 function runB() {
+  var time2 = parseInt($('#time-2').val());
   setTimeout(function(){
    timeline1b_anim();
- }, 200);  
+ }, time2);  
 }
 
 function run2() {
+  var time3 = parseInt($('#time-3').val());
   setTimeout(function(){
    timeline2_anim();
- }, 300);  
+ }, time3);  
 }
 
 
 function run3() {
+  var time4 = parseInt($('#time-4').val());
   setTimeout(function(){
    timeline3_anim();
- }, 400);  
+ }, time4);  
 }
 
 function run4() {
+  var time5 = parseInt($('#time-5').val());
 setTimeout(function(){
    timeline4_anim();
- }, 500);    
+ }, time5);    
 }
 
 
